@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lian Alanazi Portfolio</title>
+<style>
+/* Layout: one left-aligned column of plain text, no cards, no decoration. */
+:root {
+  --bg: #fdfdfb;
+  --fg: #222220;
+  --muted: #6a6a64;
+  --rule: #dcdcd4;
+  --accent: #5b3a29;
+  --font-head: Georgia, "Times New Roman", serif;
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #171715;
+    --fg: #ececE6;
+    --muted: #a3a39b;
+    --rule: #3a3a35;
+    --accent: #d9b8a4;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #171715;
+  --fg: #ececE6;
+  --muted: #a3a39b;
+  --rule: #3a3a35;
+  --accent: #d9b8a4;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 48px 64px;
+}
+main { max-width: 680px; margin: 0 auto; }
+h1 {
+  font-family: var(--font-head);
+  font-weight: 400;
+  font-size: clamp(32px, 7vw, 44px);
+  line-height: 1.15;
+  margin: 0 0 8px;
+  text-wrap: balance;
+}
+.role { color: var(--muted); margin: 0 0 20px; }
+.intro { margin: 0 0 8px; max-width: 60ch; }
+h2 {
+  font-family: var(--font-head);
+  font-weight: 400;
+  font-size: 22px;
+  margin: 44px 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--rule);
+}
+.entry { padding: 14px 0; border-bottom: 1px solid var(--rule); }
+.entry:last-child { border-bottom: 0; }
+.entry h3 { font-size: 17px; font-weight: 600; margin: 0 0 2px; }
+.meta { color: var(--muted); font-size: 14px; margin: 0 0 6px; }
+.entry p { margin: 0 0 6px; }
+a { color: var(--accent); text-underline-offset: 3px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.list { margin: 0; padding: 0; list-style: none; }
+.list li { padding: 6px 0; }
+.label { color: var(--muted); }
+.address { user-select: all; }
+footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
+</style>
+
+<main>
+  <h1>Lian Alanazi</h1>
+  <p class="role">Computer Science student, Umm Al-Qura University</p>
+  <p class="intro">I study computer science at Umm Al-Qura University and I am looking for a computer science co-op. My strongest language is Java, and I have built projects in C++, JavaFX, and web development. I am learning cloud computing on AWS and want to specialize in cybersecurity.</p>
+
+  <h2>Projects</h2>
+
+  <div class="entry">
+    <h3>Fashion Closet Manager</h3>
+    <p class="meta">Java, object-oriented programming, UML. Group project for CS1704.</p>
+    <p>Built the user, closet, and system manager classes, the main program with test scenarios, and the UML class diagram.</p>
+    <a href="https://github.com/Lian2030/fashion-closet-manager">Code on GitHub</a>
+  </div>
+
+  <div class="entry">
+    <h3>Student Grades Management System</h3>
+    <p class="meta">JavaFX, FXML, Maven. Group project for CS4108.</p>
+    <p>Built the grades module of a desktop app for managing student records.</p>
+    <a href="https://github.com/Lian2030/student-grade-system">Code on GitHub</a>
+  </div>
+
+  <div class="entry">
+    <h3>The Cosmic Voyager</h3>
+    <p class="meta">C++, OpenGL. Individual project.</p>
+    <p>A 2D space game with five interactive scenes. I designed the visuals, backgrounds, and controls, and wrote all the code.</p>
+    <a href="https://github.com/Lian2030/cpp-cosmic-voyager">Code on GitHub</a>
+  </div>
+
+  <div class="entry">
+    <h3>Hotel Management System</h3>
+    <p class="meta">MySQL. Shared project with a teammate, 50/50.</p>
+    <p>A database for hotel rooms, guests, and bookings.</p>
+    <a href="https://github.com/RehamsCloud/Hotel-Management-System-DB">Code on GitHub</a>
+  </div>
+
+  <div class="entry">
+    <h3>Tabuk Website</h3>
+    <p class="meta">HTML, CSS, JavaScript. Personal project.</p>
+    <p>A responsive website in Arabic, with right-to-left layout.</p>
+    <a href="https://lian2030.github.io/tabuk/">Visit the site</a>
+  </div>
+
+  <div class="entry">
+    <h3>Recipe Generator</h3>
+    <p class="meta">HTML, CSS, JavaScript. In progress.</p>
+    <p>A website that suggests recipes from the ingredients a user enters.</p>
+  </div>
+
+  <h2>Skills</h2>
+  <ul class="list">
+    <li><span class="label">Languages:</span> Java, C++, JavaScript, HTML, CSS, SQL, Python (learning)</li>
+    <li><span class="label">Tools:</span> Git, GitHub, UML, JavaFX, Maven</li>
+    <li><span class="label">Learning:</span> AWS cloud computing, networks, cybersecurity</li>
+  </ul>
+
+  <h2>Education and languages</h2>
+  <ul class="list">
+    <li>Bachelor of Computer Science, Umm Al-Qura University (expected graduation: [year])</li>
+    <li>IELTS Academic, overall 6.5 (July 2024)</li>
+    <li>Arabic (native), English</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>Email: <span class="address">l.alanazi@gmail.com</span></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/lian-t-alanazi-84a291338">lian-t-alanazi-84a291338</a></p>
+  <p>GitHub: <a href="https://github.com/Lian2030">Lian2030</a></p>
+
+  <footer>Last updated November 2026</footer>
+</main>
+
+</html>
